@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~materialize-css/sass/components/_color.scss';
+$roboto-font-path: '~materialize-css/dist/fonts/roboto/';
+
+$primary-color: color("amber", "lighten-2") !default;
+
+@import '~materialize-css/sass/materialize.scss';
+
+.ilike-blue-container {
+  font-size: 40px;
+  @extend .blue, .lighten-4;
+}

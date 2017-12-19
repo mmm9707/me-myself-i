@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  angular-serve-prod:
+    build: ./angular-app
+    command: npm run serve:ssr
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./angular-app:/home/service
+    ports:
+      - "4000:4000"
+
+  angular-serve:
+    build: ./angular-app
+    command: ng serve --host 0.0.0.0
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./angular-app:/home/service
+    ports:
+      - "4200:4200"

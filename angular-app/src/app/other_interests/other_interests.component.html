@@ -1,0 +1,10 @@
+<div class="container">
+  <h2>Musical Interests</h2>
+
+  <div class="row" *ngFor='let key of artists'>
+    <div class="col s2">
+      <next initial_count="{{ key.initial_count }}"></next>
+    </div>
+    <div class="col s10"><h2>{{ key.name }}</h2></div>
+  </div>
+</div>
