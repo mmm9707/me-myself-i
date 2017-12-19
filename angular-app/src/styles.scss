@@ -2,7 +2,7 @@
 @import '~materialize-css/sass/components/_color.scss';
 $roboto-font-path: '~materialize-css/dist/fonts/roboto/';
 
-$primary-color: color("amber", "lighten-2") !default;
+$primary-color: color("grey", "darken-2") !default;
 
 @import '~materialize-css/sass/materialize.scss';
 
