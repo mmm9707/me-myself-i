@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { OtherInterestsComponent } from './other_interests/other_interests.component';
 import { MusicalInterestsComponent } from './musical_interests/musical_interests.component';
 import { NextComponent } from './components/next/next.component';
+import { MyStoryComponent } from './my_story/my_story.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { NextComponent } from './components/next/next.component';
     HomeComponent,
     OtherInterestsComponent,
     MusicalInterestsComponent,
+    MyStoryComponent,
     NextComponent
   ],
   imports: [
@@ -24,6 +26,7 @@ import { NextComponent } from './components/next/next.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'musical_interests', component: MusicalInterestsComponent },
       { path: 'other_interests', component: OtherInterestsComponent },
+      { path: 'my_story', component: MyStoryComponent },
     ])
   ],
   providers: [],
